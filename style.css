@@ -3,13 +3,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
 }
 
 .navbar {
     padding: 20px;;
-    position: absolute;
+    position: fixed;
     width: 100%;
     font-family: "Nunito", sans-serif;
     background-color: #100f0f;
@@ -43,7 +47,7 @@ nav ul{
     color: red;
 }
 
-main .first_section{
+main #first_section{
     height: 90vh;
     background-image: url(image.jpeg);
     background-repeat: no-repeat;
@@ -84,6 +88,24 @@ button:hover{
     cursor: pointer;
 }
 
-.second_section{
-    height: 100vh;
+#second_section{
+    height: max-content;
+}
+
+.wrapper{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.card{
+    margin: 20px;
+    /* border: 2px solid black; */
+    padding: 100px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 4px 5px 9px 0px rgb(1, 1, 1);
+    border-radius: 10px;
+
 }
