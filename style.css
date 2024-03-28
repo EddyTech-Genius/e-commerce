@@ -40,6 +40,12 @@ nav ul{
     text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.649);
 }
 
+.navbar ul li a:hover{
+    box-shadow: none;
+    transition: 0.5s;
+    color: rgba(0, 195, 255, 0.848);
+}
+
 .logo{
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
@@ -107,5 +113,80 @@ button:hover{
     background-color: white;
     box-shadow: 4px 5px 9px 0px rgb(1, 1, 1);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    p{
+        color: black;
+        font-size: 17px;
+        font-family: Poppins, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+}
 
+.card__1{
+    img{
+        width: 200px;
+    }
+}
+
+.card__3{
+    img{
+        width: 200px;
+    }
+}
+
+.card__7{
+    img{
+        width: 200px;
+    }
+}
+
+.card__6{
+    img{
+        width: 200px;
+    }
+}
+
+.card__8{
+    img{
+        width: 200px;
+    }
+}
+
+.card__5{
+    img{
+        width: 200px;
+    }
+}
+
+#third__section{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    h2{
+        margin-bottom: 10px;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        background-color: blue;
+    }
+    p{
+        color: rgb(16, 15, 15);
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    background-color: black;
+    color: rgb(0, 166, 255);
 }
